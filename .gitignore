@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+.python-version
+*.pyd
+*.pyo
+
+# Test files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Azure
+.azure/
+
+# Secrets and keys
+*.key
+*.pem
+*.p12
+secrets/
+.secrets
+

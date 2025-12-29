@@ -1,0 +1,9 @@
+{
+  "name": "oai_dental_voice_agent_sip_westbury_dental_care",
+  "trunk_ids": ["ST_RabtfewuqVuX"],
+  "rule": {
+    "dispatchRuleIndividual": {
+      "roomPrefix": "smiledesk-agent"
+    }
+  }
+}

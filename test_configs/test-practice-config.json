@@ -1,0 +1,124 @@
+{
+  "customer_id": "test-practice",
+  "customer": {
+    "name": "Test Dental Practice",
+    "phone": "+441234567890",
+    "email": "contact@testdental.com",
+    "address": "123 Test Street, London, UK",
+    "website": "https://testdental.com"
+  },
+  "system_prompt": "You are an AI receptionist for Test Dental Practice, a modern dental clinic in London. Your role is to:\n\n1. Greet callers warmly and professionally\n2. Understand their dental needs (check-up, emergency, cosmetic, etc.)\n3. Check appointment availability\n4. Book appointments with patient details\n5. Handle callback requests if no slots available\n\nTone: Professional, friendly, and efficient.\n\nAlways confirm important details (name, date of birth, phone number) before booking.\nBe empathetic with patients calling for emergencies.\nOffer alternative dates if preferred slots are unavailable.",
+  "greeting": "Hi, this is Test Dental Practice, how can I help you today?",
+  "agent_name": "Sarah",
+  "consultation_types": {
+    "General Check-up": "test-service-001",
+    "Emergency": "test-service-002",
+    "Teeth Cleaning": "test-service-003",
+    "Whitening": "test-service-004",
+    "Filling": "test-service-005",
+    "Root Canal": "test-service-006",
+    "Extraction": "test-service-007",
+    "Cosmetic Consultation": "test-service-008"
+  },
+  "doctors": {
+    "dr-jones": {
+      "name": "Dr. Emily Jones",
+      "specialization": "General Dentistry",
+      "availability": "Mon-Fri 9AM-5PM"
+    },
+    "dr-patel": {
+      "name": "Dr. Raj Patel",
+      "specialization": "Orthodontics",
+      "availability": "Tue, Thu, Fri 10AM-6PM"
+    },
+    "dr-chen": {
+      "name": "Dr. Lisa Chen",
+      "specialization": "Cosmetic Dentistry",
+      "availability": "Mon, Wed, Fri 11AM-7PM"
+    }
+  },
+  "azure_storage": {
+    "container": "dental",
+    "folder": "test-practice",
+    "account_name": "set_via_env",
+    "account_key": "set_via_env"
+  },
+  "voice": {
+    "voice_id": "21m00Tcm4TlvDq8ikWAM",
+    "model": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.65,
+      "similarity_boost": 0.75,
+      "speed": 0.9,
+      "use_speaker_boost": true
+    }
+  },
+  "elevenlabs_voice_id": "21m00Tcm4TlvDq8ikWAM",
+  "elevenlabs_model": "eleven_multilingual_v2",
+  "elevenlabs_stability": 0.65,
+  "elevenlabs_similarity_boost": 0.75,
+  "elevenlabs_speed": 0.9,
+  "elevenlabs_use_speaker_boost": true,
+  "keyterms": [
+    "Test Dental",
+    "Dr. Jones",
+    "Dr. Patel",
+    "Dr. Chen",
+    "NHS",
+    "private",
+    "emergency"
+  ],
+  "slack": {
+    "enabled": true,
+    "webhook_url": "set_via_env",
+    "channel": "#test-practice-calls"
+  },
+  "features": {
+    "sentiment_analysis": true,
+    "call_recording": true,
+    "outcome_tracking": true,
+    "appointment_reminders": true
+  },
+  "business_hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "saturday": {
+      "open": "10:00",
+      "close": "14:00"
+    },
+    "sunday": {
+      "closed": true
+    }
+  },
+  "metadata": {
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-15T10:30:00Z",
+    "version": "1.0.0",
+    "notes": "Test configuration for multi-tenant testing"
+  }
+}
+
+
+
+
+
+
+
